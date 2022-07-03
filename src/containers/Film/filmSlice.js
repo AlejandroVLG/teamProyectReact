@@ -13,7 +13,6 @@ export const filmSlice = createSlice({
             let key = state.films.filter(film => {
                 film.id === action.payload
             })
-            //state.weather.filter()
         }
     }
 })

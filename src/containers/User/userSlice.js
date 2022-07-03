@@ -43,7 +43,7 @@ export const userSlice = createSlice({
 export const loginUser = (body) => async (dispatch) => {
   try {
 
-    const user = await axios.post("https://endpoints-sql.herokuapp.com/users/login", body);
+    const user = await axios.post("https://heroku-sqlurl.herokuapp.com/users/login", body);
 
     let decodificada = jwt(user.data.token);
 
@@ -66,7 +66,7 @@ export const logOut = () => (dispatch) => {
 
 export const registerUser = (name, client_number, age, gender, password, role) => async (dispatch) => {
   try {
-    const user = await axios.post('https://endpoints-sql.herokuapp.com/users/adduser',
+    const user = await axios.post('https://heroku-sqlurl.herokuapp.com/users/adduser',
       {
         name: name,
         client_number: client_number,

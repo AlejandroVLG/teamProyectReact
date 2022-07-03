@@ -105,7 +105,7 @@ const Register = props => {
             <Form.Label></Form.Label>
             <Form.Control className="label" type="text" name="role" placeholder="Role" onChange={handleInput} />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button type="submit">
             Register
           </Button>
         </Form>
