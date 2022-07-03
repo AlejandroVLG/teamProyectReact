@@ -2,10 +2,10 @@ import React from "react";
 import { Card, Button } from 'react-bootstrap'
 import './Filmcard.scss'
 
-const Filmcard = props => { 
-    const { director, title, year, image, genre, recomended_age, duration, price, url } = props;
+const Filmcard = props => {
+    const { director, title, year, genre, recomended_age, duration, price, url } = props;
     return (
-        <Card className = "Filmcard">
+        <Card className="Filmcard">
             <Card.Img variant="top" src={url || "https://static.vecteezy.com/system/resources/previews/000/665/794/large_2x/vector-cinema-elements.jpg"} />
             <Card.Body>
                 <Card.Title>
@@ -20,7 +20,7 @@ const Filmcard = props => {
                     <li><strong>Duración:</strong> {duration} minutos</li>
                     <li><strong>Precio:</strong> {price} EUR </li>
                 </ul>
-                <Button variant="primary" className ="cardBtn">Ver Pelicula</Button>
+                <Button variant="primary" className="cardBtn">Ver Pelicula</Button>
             </Card.Body>
         </Card>
     )

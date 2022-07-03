@@ -46,13 +46,13 @@ export const loginUser = (body) => async (dispatch) => {
     const user = await axios.post("https://heroku-sqlurl.herokuapp.com/users/login", body);
 
     let decoded = jwt(user.data.token);
-
     if (user.status === 200) {
 
       dispatch(login({ ...decoded, token: user.data.token }))
     }
 
   } catch (error) {
+    
     console.log(error)
   }
 };
