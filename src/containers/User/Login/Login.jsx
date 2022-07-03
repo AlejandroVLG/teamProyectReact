@@ -16,10 +16,8 @@ const Login = () => {
   const identification = useSelector(userData);
 
   const updateCredentials = (event) => {
-    setCredentials({ ...credentials, 
-                    [event.target.name]: event.target.value })
+    setCredentials({ ...credentials, [event.target.name]: event.target.value })
   }
-
 
   useEffect(() => {
 
@@ -28,18 +26,7 @@ const Login = () => {
     };
   }, []);
 
-
   const log = () => {
-
-
-
-
-    /* if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(credentials.email)) {
-      setMsgError('Introduce un e-mail válido');
-      return;
-    } */
-
-
 
     if (credentials.password.length > 5) {
 
@@ -54,9 +41,7 @@ const Login = () => {
       return;
     }
 
-
     setMsgError("");
-
 
     dispatch(loginUser({
       client_number: credentials.client_number,
@@ -75,7 +60,7 @@ const Login = () => {
       {/* <pre>{JSON.stringify(credentials, null, 2)}</pre> */}
       <input type='text' name='client_number' title='client_number' placeholder='Client number' onChange={updateCredentials} lenght='30' />
       <input type='password' name='password' title='password' placeholder='Password' onChange={updateCredentials} lenght='30' />
-      <Button variant="primary" type="submit" className="loginButton" onClick={() => log()}>Login</Button> 
+      <Button variant="primary" type="submit" className="loginButton" onClick={() => log()}>Login</Button>
       <div className='error'>{msgError}</div>
     </div>
   )

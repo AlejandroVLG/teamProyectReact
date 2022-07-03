@@ -37,15 +37,6 @@ const Register = props => {
   const userRegister = (event) => {
     event.preventDefault()
 
- /*    if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(register.email)) {
-      setRegister({
-        ...register,
-        isError: true,
-        message: 'Wrong e-mail'
-      });
-      return;
-    } */
-
     if (register.password.length > 5) {
       if (! /[\d()+-]/g.test(register.password)) {
         setRegister({
@@ -60,7 +51,7 @@ const Register = props => {
       setRegister({
         ...register,
         isError: true,
-        message: 'El password debe de tener como mínimo 4 caracteres'
+        message: 'Password must be at least 5 characters long'
       });
       return;
     }
@@ -78,7 +69,7 @@ const Register = props => {
   return (
     <Row className="Register justify-content-md-center">
       <Col md={6}>
-        
+
         <br></br>
         <Form onSubmit={userRegister}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -109,8 +100,8 @@ const Register = props => {
             Register
           </Button>
         </Form>
-        <p>{register.isError ? register.message : ''}</p>
-        <p>{userData.isError ? userData.errorMessage : userData.successMessage}</p>
+        <p className="msg" >{register.isError ? register.message : ''}</p>
+        <p className="msg" >{userData.isError ? userData.errorMessage : userData.successMessage}</p>
       </Col>
     </Row>
   )
