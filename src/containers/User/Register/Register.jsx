@@ -83,27 +83,27 @@ const Register = props => {
         <Form onSubmit={userRegister}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label></Form.Label>
-            <Form.Control type="text" name="name" placeholder="Name" onChange={handleInput} />
+            <Form.Control className="label" type="text" name="name" placeholder="Name" onChange={handleInput} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label></Form.Label>
-            <Form.Control type="text" name="client_number" placeholder="Client number" onChange={handleInput} />
+            <Form.Control className="label" type="text" name="client_number" placeholder="Client number" onChange={handleInput} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label></Form.Label>
-            <Form.Control type="text" name="age" placeholder="Age" onChange={handleInput} />
+            <Form.Control className="label" type="text" name="age" placeholder="Age" onChange={handleInput} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label></Form.Label>
-            <Form.Control type="text" name="gender" placeholder="Gender" onChange={handleInput} />
+            <Form.Control className="label" type="text" name="gender" placeholder="Gender" onChange={handleInput} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label></Form.Label>
-            <Form.Control type="password" name="password" placeholder="Password" onChange={handleInput} />
+            <Form.Control className="label" type="password" name="password" placeholder="Password" onChange={handleInput} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label></Form.Label>
-            <Form.Control type="text" name="role" placeholder="Role" onChange={handleInput} />
+            <Form.Control className="label" type="text" name="role" placeholder="Role" onChange={handleInput} />
           </Form.Group>
           <Button variant="primary" type="submit">
             Register

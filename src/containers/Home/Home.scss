@@ -4,4 +4,22 @@
     background-color: rgb(163, 232, 94);
     background-image: url(/public/sala.jpg);
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .carousel{
+        width: 36em;
+        margin-top: 17em;
+        margin-right: 4em;
+        background-size: cover;
+        box-shadow: 0em 0em 2em 0.1em white;
+        border-radius: 0.3em;
+    }
+    img{
+        background-size: cover;
+        height: 19em;
+        width: 15em;
+        border-radius: 0.3em;
+    }
 }

@@ -33,36 +33,46 @@ This is the fifth Geekshubs project and it consists in create a frontend for the
 
 ## Screenshots
 
-<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/screenshot1.png">
+</br>
 
-<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/screenshot2.png">
-
-<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/screenshot3.png">
-
-<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/screenshot4.png">
+● Home page:
 
 </br>
 
-##Tecnologias:
+<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/screenshot1.png">
 
+</br>
 
-● [React](https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg)
+● Login page:
 
-● https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png
+</br>
 
-● [Bootstrap](https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg)
+<img src="https://github.com/Alexdck/teamProyectReact/blob/master/public/img/screenshot2.png">
 
-● [Sass](https://www.vectorlogo.zone/logos/sass-lang/sass-lang-ar21.svg)
+</br>
 
-● [Cors](https://addons.mozilla.org/user-media/previews/full/227/227652.png?modified=1622133270)
+● Register page:
 
-● [Axios](https://www.vectorlogo.zone/logos/axios/axios-ar21.svg)
+</br>
 
-● JWT
+<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/screenshot3.png">
 
-● [MySqlWorkbench](https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg)
+</br>
 
-● [Heroku](https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg)
+● Films page:
+
+</br>
+
+<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public\img\screenshot4.PNG">
+
+</br>
+
+##Technologies:
+
+</br>
+
+<code><img width="10%" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg"></code>
+<code><img width="10%" src="https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-ar21.svg"></code> <code><img width="10%" src="https://addons.mozilla.org/user-media/previews/full/227/227652.png?modified=1622133270"></code> <code><img width="10%" src="https://images.ctfassets.net/23aumh6u8s0i/6sw33rq7EM8nCi5Gov3RCD/6b1d1cf37d688b3e81d2445da694e938/jwt_01"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/axios/axios-ar21.svg"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg"></code>
 
 </br>
 
@@ -72,7 +82,7 @@ https://heroku-sqlurl.herokuapp.com/
 
 </br>
 
-##Autores:
+##Authors:
 
 https://github.com/Claudia1010
 
