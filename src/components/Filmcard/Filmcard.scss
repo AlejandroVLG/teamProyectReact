@@ -8,7 +8,9 @@
     border-radius: 2em;
     border: .1em solid black;
     box-shadow: 3px 3px 10px 1px;
+    height: 350px !important;
     img {
+        object-fit: contain !important;
         cursor: pointer;
     }
 
@@ -35,6 +37,9 @@
                 list-style: none;
                 text-align: left;
                 padding: 20px 0 0 0;
+            }
+            img{
+                object-fit: contain !important;
             }
         }
     }

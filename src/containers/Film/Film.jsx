@@ -37,7 +37,7 @@ const Film = props => {
             <Row>
                 {
                     films.map((data, index)=> (
-                        <Col key={index} xs={12} md={2} xl={2}>
+                        <Col key={index} xs={6} sm={4} md={3} xl={2}>
                             <Filmcard {...data} />
                         </Col>
                     ))
