@@ -1,11 +1,6 @@
 import React from 'react';
 import "./Header.scss";
-<<<<<<< HEAD
-import { Nav } from 'react-bootstrap';
-import { NavLink } from "react-router-dom"
-=======
 import { useNavigate } from "react-router-dom"
->>>>>>> 935e5e68293d7f1a724bb22e512f2429e3981a59
 import { useDispatch, useSelector } from 'react-redux';
 import { logOut, userData } from '../../containers/User/userSlice';
 
@@ -14,43 +9,6 @@ const Header = () => {
 
     const identification = useSelector(userData)
 
-<<<<<<< HEAD
-    const dispatch = useDispatch()
-
-    if (!identification?.name) {
-
-        return (
-            <div className='Nav1'>
-                <Nav.Item className='firstNav'>
-                    <NavLink className={({ isActive }) => (isActive ? "active" : "inactive")} to="/">Home</NavLink>
-                </Nav.Item>
-                <Nav.Item>
-                    <NavLink className={({ isActive }) => (isActive ? "active" : "inactive")} to="/films">Films</NavLink>
-                </Nav.Item>
-                <Nav.Item>
-                    <NavLink className={({ isActive }) => (isActive ? "active" : "inactive")} to="/users/login">Login</NavLink>
-                </Nav.Item>
-                <Nav.Item>
-                    <NavLink className={({ isActive }) => (isActive ? "active" : "inactive")} to="/users/adduser">Register</NavLink>
-                </Nav.Item>
-            </div>
-        )
-    } else { 
-        return (
-            <div className='Nav2'>
-                <Nav.Item className='firstNav'>
-                    <NavLink className={({ isActive }) => (isActive ? "active" : "inactive")} to="/">Home</NavLink>
-                </Nav.Item>
-                <Nav.Item>
-                    <NavLink className={({ isActive }) => (isActive ? "active" : "inactive")} to="/films">Films</NavLink>
-                </Nav.Item>
-                <Nav.Item>
-                    <NavLink className="" to="/">{identification?.user.name}</NavLink>
-                </Nav.Item>
-                <Nav.Item>
-                    <NavLink className={({ isActive }) => (isActive ? "active" : "inactive")} onClick={()=>dispatch(logOut())} >Logout</NavLink>
-                </Nav.Item>
-=======
     let navigate = useNavigate()
     const dispatch = useDispatch()
 
@@ -90,7 +48,6 @@ const Header = () => {
                     <div className="nav userName" to="/">{identification?.user.name}</div>
                     <div className="nav" onClick={() => dispatch(logOut())} >Logout</div>
                 </div>
->>>>>>> 935e5e68293d7f1a724bb22e512f2429e3981a59
             </div>
         )
     }
