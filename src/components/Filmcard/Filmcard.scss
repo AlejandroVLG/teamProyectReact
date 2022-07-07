@@ -1,22 +1,44 @@
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 935e5e68293d7f1a724bb22e512f2429e3981a59
 .Filmcard {
     padding: 1em;
-    margin: 1em;
+    // margin: 1em;
     background-color: #868acf !important;
     border-radius: 2em;
     border: .1em solid black;
     box-shadow: 3px 3px 10px 1px;
+    img {
+        cursor: pointer;
+    }
+
+    .card-body {
+        padding-bottom: 0;
+        .card-title {
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
 
     .cardBtn {
         background-color: #0606dc;
         border: 0;
         color: white;
     }
-    ul{
-        list-style: none;
-        text-align: left;
-        padding: 20px 0 0 0;
+}
+.modal-dialog{
+    .modal-content{
+        .modal-body{
+            ul{
+                list-style: none;
+                text-align: left;
+                padding: 20px 0 0 0;
+            }
+        }
     }
 }

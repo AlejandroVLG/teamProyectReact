@@ -1,4 +1,4 @@
-.Home{
+.Home {
     height: 90vh;
     width: 100vw;
     background-color: rgb(163, 232, 94);
@@ -7,18 +7,55 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
-    .carousel{
-        width: 36em;
-        margin-top: 17em;
-        margin-right: 4em;
-        background-size: cover;
-        box-shadow: 0em 0em 2em 0.1em white;
-        border-radius: 0.3em;
+    .homeTop {
+        height: 30%;
+        width: 100%;
     }
-    img{
+
+    .homeBot {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .botLeft {
+        height: 100%;
+        width: 20%;
+    }
+
+    .botMid {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botRight {
+        height: 100%;
+        width: 20%;
+    }
+
+
+    .carousel {
+        width: 30em;
         background-size: cover;
-        height: 19em;
+        border-radius: 0.3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 3.5em;
+        margin-top: 4.5em;
+        box-shadow: 0em 0em 2em 1.5em rgba(255, 255, 255, 0.175);
+    }
+    img {
+        background-size: cover;
+        height: 16.5em;
         width: 15em;
         border-radius: 0.3em;
     }

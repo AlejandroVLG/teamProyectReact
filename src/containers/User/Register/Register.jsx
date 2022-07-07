@@ -2,7 +2,7 @@ import React from "react"
 import { useEffect, useState } from "react"
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
-import { registerUser, userSelector } from '../userSlice'
+import { registerUser, userData} from '../userSlice'
 import { useNavigate } from 'react-router-dom'
 
 import "./Register.scss"
@@ -10,7 +10,8 @@ import "./Register.scss"
 const Register = props => {
   const dispatch = useDispatch()
   let navigate = useNavigate()
-  const userData = useSelector(userSelector)
+
+  const identification = useSelector(userData)
 
   const [register, setRegister] = useState({
     name: "",
@@ -110,7 +111,7 @@ const Register = props => {
           </Button>
         </Form>
         <p>{register.isError ? register.message : ''}</p>
-        <p>{userData.isError ? userData.errorMessage : userData.successMessage}</p>
+        <p>{identification.isError ? identification.errorMessage : identification.successMessage}</p>
       </Col>
     </Row>
   )
