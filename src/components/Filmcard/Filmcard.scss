@@ -1,10 +1,10 @@
-
+$color-card: #868acf;
 
 
 .Filmcard {
     padding: 1em;
-    // margin: 1em;
-    background-color: #868acf !important;
+    //margin: 1em;
+    background-color: $color-card !important;
     border-radius: 2em;
     border: .1em solid black;
     box-shadow: 3px 3px 10px 1px;
@@ -24,24 +24,9 @@
     }
     
 
-    .cardBtn {
-        background-color: #0606dc;
-        border: 0;
-        color: white;
-    }
+   
 
-.modal-dialog{
-    .modal-content{
-        .modal-body{
-            ul{
-                list-style: none;
-                text-align: left;
-                padding: 20px 0 0 0;
-            }
             img{
                 object-fit: contain !important;
             }
         }
-    }
-}
-}

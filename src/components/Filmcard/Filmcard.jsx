@@ -39,8 +39,8 @@ const Filmcard = props => {
             <Modal.Title>{title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img src={url || "https://static.vecteezy.com/system/resources/previews/000/665/794/large_2x/vector-cinema-elements.jpg"}/>
-            <h5>Información</h5>
+            <img width={230} height={345} 
+            src={url || "https://static.vecteezy.com/system/resources/previews/000/665/794/large_2x/vector-cinema-elements.jpg"}/>
             <ul>
                 <li><strong>Director:</strong> {director}</li>
                 <li><strong>Año de estreno:</strong> {year}</li>
@@ -49,7 +49,7 @@ const Filmcard = props => {
                 <li><strong>Duración:</strong> {duration} minutos</li>
                 <li><strong>Precio:</strong> {price} EUR </li>
             </ul>
-            <Button variant="primary" className ="cardBtn" size="lg" href={trailerUrl} target="_blank">Ver Trailer</Button>
+            <Button className ="cardBtn" size="lg" onClick={trailerUrl} target="_blank">Ver Trailer</Button>
           </Modal.Body>
         </Modal>
       </>

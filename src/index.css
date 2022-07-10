@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.modal-dialog .modal-content .modal-body ul{
+  list-style:none;
+  text-align:left;
+  padding: 20px 0 0 0;
+}
+
+.modal-dialog .modal-content .modal-body .cardBtn{
+    background-color:rgb(163, 44, 19);
+    border: 0;
+    color: white;
+}
+
+
+.modal-dialog .modal-content .modal-body{
+  background-color: black;
+  text-align: center;
+  color: antiquewhite;
+
+}
+.modal-dialog .modal-content .modal-header{
+  background-color:rgb(163, 44, 19);
+  color:antiquewhite;
+}
