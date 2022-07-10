@@ -19,14 +19,22 @@ const Header = () => {
     if (!identification?.token) {
 
         return (
+            
             <div className='nav1'>
+                <div className='netflixContainer'>
+            <img
+              src="/logo.sv../../../public/img/netflixpobre.jpeg"
+              width="50"
+              height="50"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+          </div>
                 <div className="nav1First">
                     <div className="nav" onClick={() => travel("/")}>Home</div>
                     <div className="nav" onClick={() => travel("/films")}>Films</div>
                 </div>
-                <div lassName='netflixContainer'>
-                    <img className='netflix' src="../../../public/img/netflixpobre.jpeg" alt="" />
-                </div>
+            
                 <div className="nav1Second">
                     <div className="nav" onClick={() => travel("/users/login")}>Login</div>
                     <div className="nav" onClick={() => travel("/users/adduser")}>Register</div>

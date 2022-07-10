@@ -29,7 +29,7 @@ const Filmcard = props => {
             />
             <Card.Body>
                 <Card.Title>
-                    <h2>{title}</h2>
+                    <h5>{title}</h5>
                 </Card.Title>
             </Card.Body>
         </Card>
@@ -49,7 +49,7 @@ const Filmcard = props => {
                 <li><strong>Duración:</strong> {duration} minutos</li>
                 <li><strong>Precio:</strong> {price} EUR </li>
             </ul>
-            <Button className ="cardBtn" size="lg" onClick={trailerUrl} target="_blank">Ver Trailer</Button>
+            <Button className ="cardBtn" size="lg" href={trailerUrl} target="_blank">Ver Trailer</Button>
           </Modal.Body>
         </Modal>
       </>
